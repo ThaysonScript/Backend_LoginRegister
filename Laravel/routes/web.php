@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\EventController;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/register', [EventController::Class, 'register']);
+
+Route::get('/login', [EventController::Class, 'login']);
+
+Route::get('/logado', [EventController::Class, 'logado']);
+
+Route::get('/projetos', [EventController::class, 'project_cadastrado']);
