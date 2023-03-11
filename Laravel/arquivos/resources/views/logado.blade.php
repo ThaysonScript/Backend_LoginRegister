@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Logado</title>
 </head>
 <body>
-    <a href="registrar">registro</a>
+    <h1>Logado</h1>
+    <p>Voce esta logado!</p>
 </body>
 </html>
