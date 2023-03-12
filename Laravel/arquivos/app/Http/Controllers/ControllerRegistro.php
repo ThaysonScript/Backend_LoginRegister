@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class registro extends Controller
+class ControllerRegistro extends Controller
 {
     public function index() {
-        return view('logado');
+        return view('welcome');
     }
 }

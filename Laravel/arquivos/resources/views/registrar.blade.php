@@ -1,8 +1,10 @@
-@extends('layouts/layoutRegistro')
+@extends('layouts/registro')
+
+@section('title', 'Registro')
 
 @section('content')
     
-    <form method="post" action="registro/enviar">
+    <form method="post" action="/enviar">
         @csrf
 
         <label for="email">Email:</label>
@@ -14,5 +16,7 @@
         <button type="submit">Enviar</button>
 
     </form>
+
+    <a href="/">Voltar</a>
 
 @endsection

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerRegistro;
 use App\Http\Controllers\registro;
 use Illuminate\Support\Facades\Route;
 
@@ -18,16 +19,8 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/registrar', function () {
+Route::get('/registrar', function() {
     return view('registrar');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-
-
-Route::prefix('registro') -> group(function() {
-    Route::post('/enviar', [registro::class, 'index']);
-});
+Route::post('/enviar', [ControllerRegistro::class, 'index']);
